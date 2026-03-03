@@ -51,11 +51,17 @@
       font-size: 0.9rem;
     }
 
+    .days {
+      margin-top: 25px;
+      font-size: 0.8rem;
+      opacity: 0.35;
+      letter-spacing: 1px;
+    }
+
     @keyframes fadeIn {
       to { opacity: 1; }
     }
 
-    /* Mobile adjustments */
     @media (max-width: 600px) {
       body {
         padding: 60px 20px;
@@ -75,6 +81,10 @@
       .closing {
         margin-top: 50px;
         font-size: 0.85rem;
+      }
+
+      .days {
+        font-size: 0.75rem;
       }
     }
   </style>
@@ -106,6 +116,23 @@
     <div class="closing">
       — No hard feelings. Only respect.
     </div>
+
+    <div class="days" id="daysCounter"></div>
   </div>
+
+  <script>
+    // 🔁 CHANGE THIS DATE
+    const startDate = new Date("2023-01-01");
+
+    function calculateDays() {
+      const now = new Date();
+      const diff = now - startDate;
+      const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+      document.getElementById("daysCounter").textContent =
+        days + " days have passed.";
+    }
+
+    calculateDays();
+  </script>
 </body>
 </html>
