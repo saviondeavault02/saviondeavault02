@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Some Things Stay</title>
+
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: #111;
+      color: #f2f2f2;
+      font-family: Georgia, serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      padding: 40px 20px;
+    }
+
+    .container {
+      max-width: 680px;
+      width: 100%;
+      text-align: center;
+      opacity: 0;
+      animation: fadeIn 2.5s ease forwards;
+    }
+
+    h1 {
+      font-weight: normal;
+      letter-spacing: 3px;
+      margin-bottom: 40px;
+      font-size: 1.4rem;
+      opacity: 0.8;
+    }
+
+    p {
+      font-size: 1.05rem;
+      line-height: 1.9;
+      opacity: 0.85;
+    }
+
+    .closing {
+      margin-top: 60px;
+      font-style: italic;
+      opacity: 0.6;
+      font-size: 0.9rem;
+    }
+
+    @keyframes fadeIn {
+      to { opacity: 1; }
+    }
+
+    /* Mobile adjustments */
+    @media (max-width: 600px) {
+      body {
+        padding: 60px 20px;
+        align-items: flex-start;
+      }
+
+      h1 {
+        font-size: 1.2rem;
+        margin-bottom: 30px;
+      }
+
+      p {
+        font-size: 1rem;
+        line-height: 1.8;
+      }
+
+      .closing {
+        margin-top: 50px;
+        font-size: 0.85rem;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Some Things Still Stay</h1>
+
+    <p>
+      We were a season.
+      <br><br>
+      Not forever —
+      but not accidental either.
+      <br><br>
+      There are pieces of you
+      I carry quietly.
+      Not in longing.
+      Not in regret.
+      <br><br>
+      Just in understanding.
+      <br><br>
+      What we had shaped me.
+      And I’m better for it.
+      <br><br>
+      I hope life meets you gently.
+    </p>
+
+    <div class="closing">
+      — No hard feelings. Only respect.
+    </div>
+  </div>
+</body>
+</html>
